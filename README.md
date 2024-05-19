@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Restaurant Reservation App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React-based web application that allows users to book a table at a restaurant. It features a booking form where users can select a date, time, number of guests, and the occasion for their reservation. The app also displays available reservation times based on the selected date and updates the availability in real-time as bookings are made.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Booking Form**: Users can fill out a form to book a table for a specific date, time, number of guests, and occasion.
+- **Available Times Display**: The app fetches and displays available reservation times for the selected date, taking into account already booked times.
+- **Real-time Updates**: As users book reservations, the available times list is updated in real-time to reflect the booked times.
+- **Booking Confirmation**: After submitting the form, users are navigated to a confirmation page that displays the details of their reservation.
+- **Form Validation**: The booking form includes both HTML5 and client-side validation using React to ensure that users provide valid input data before submitting the form.
+- **User Experience Improvements**: The app includes features like disabling the submit button during form submission and displaying error messages for better user experience.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: The app is built using the React library for building user interfaces.
+- **React Hooks**: The app utilizes various React hooks, including `useState`, `useEffect`, and `useReducer`, for managing state and side effects.
+- **React Router**: The routing functionality is implemented using the `react-router-dom` library, allowing navigation between different pages within the application.
+- **Mock API**: The app uses a mock API to simulate fetching available times and submitting reservation data.
+- **Jest and React Testing Library**: Unit tests for components and utility functions are implemented using Jest and the React Testing Library.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+To run the app locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository: `git clone https://github.com/your-repo/restaurant-reservation-app.git`
+2. Navigate to the project directory: `cd restaurant-reservation-app`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm start`
+5. Open the app in your browser at `http://localhost:3000`
 
-### `npm run build`
+## Testing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The app includes unit tests for components and utility functions. To run the tests, use the following command:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This will run all the tests and display the test coverage report.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## API Integration
 
-### `npm run eject`
+The app currently uses a mock API to simulate fetching available times and submitting reservation data. However, you can integrate a real API by updating the `fetchAPI` and `submitAPI` functions in the `Main` component.
+## Results:
+![image](https://github.com/JoydELC/capstone-little-lemon/assets/115313115/da01813c-6d6f-4b6c-80a3-909c986512c4)
+![image](https://github.com/JoydELC/capstone-little-lemon/assets/115313115/3222d0bc-d58c-4e11-bcc7-9603731184db)
+![image](https://github.com/JoydELC/capstone-little-lemon/assets/115313115/bb30398e-60bb-4719-8e75-deacd3d39ed9)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributing
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
