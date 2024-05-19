@@ -1,18 +1,23 @@
+// App.js
 import './App.css';
-import Header from './components/Header';
-import Nav from './components/Nav';
-import Main from './components/Main';
-import Footer from './components/Footer';
+import React from 'react';
+import Nav from './comp/Nav';
+import Main from './comp/Main';
+import Footer from './comp/Footer';
+import { BrowserRouter as Router } from 'react-router-dom';
+
 
 
 function App() {
   return (
-    <>
-      <Header/>
-      <Nav/>
-      <Main/>
-      <Footer/>
-    </>  );
+    <React.Fragment>
+      <Router>
+        <Nav />
+        <Main />
+        <Footer />
+      </Router>
+    </React.Fragment>
+  );
 }
 
 export default App;
